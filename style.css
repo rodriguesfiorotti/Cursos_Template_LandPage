@@ -1,0 +1,55 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    background: radial-gradient(ellipse at 50% 80%, #251f33 0%, #221d32 20%, #221d32 30%, #1a1826 40%, #1a1826 60%, #1a1826 80%, #1a1826 100%);
+    min-height: 100vh; /* Ocupa pelo menos 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão do corpo */
+  }
+
+header {
+    display: flex; /*torna o cabeçalho um contêiner flexível.*/
+    justify-content: space-between; /*distribui os itens filhos (a imagem e a lista de navegação) para os extremos da linha.*/
+    background-color: #1a1826; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* centraliza verticalmente os itens dentro do cabeçalho. */
+  }
+
+  header img {
+    width: 120px;
+    height: 55px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end; /**/
+    list-style: none; /*Retira os pontos de todos os itens da lista*/
+  }
+
+  nav li {
+    display: inline-block; /*Deixa os itens em linha horizontal*/
+    margin-right: 20px; /*Distancia entre itens a direita*/
+  }
+
+  nav a {
+    text-decoration: none; /*Remove a linha por baixo do link*/
+    color: #cecaca;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  /* Estilo dos links de navegação quando passa o mouse sobre eles */
+nav a:hover {
+    color: #fff;
+  }
