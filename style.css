@@ -11,6 +11,8 @@ body, h1, h2, h3, p, ul, li {
     background: radial-gradient(ellipse at 50% 80%, #251f33 0%, #221d32 20%, #221d32 30%, #1a1826 40%, #1a1826 60%, #1a1826 80%, #1a1826 100%);
     min-height: 100vh; /* Ocupa pelo menos 100% da altura da viewport */
     margin: 0; /* Remove a margem padrão do corpo */
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
 header {
@@ -43,13 +45,108 @@ header {
   }
 
   nav a {
+    display: block;
     text-decoration: none; /*Remove a linha por baixo do link*/
     color: #cecaca;
     font-weight: bold;
     font-size: 1.2em;
+    transition: transform 0.5s ease-in-out;
   }
 
   /* Estilo dos links de navegação quando passa o mouse sobre eles */
 nav a:hover {
     color: #fff;
+    transform: scale(1.1); /* Ajuste o valor conforme necessário para a escala desejada */
+
   }
+
+  #texto-central {
+    /* Estilos para a div com id="texto-central" */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 15px;
+
+}
+
+h1{
+  font-size: 3.8em;
+}
+
+h1 span {
+  display: block;
+  text-indent: 283px; /* Ajuste o valor conforme necessário */
+  margin-top: -25px;
+}
+
+#sub-frase {
+  font-size: 1.3em;
+  margin-left: -220px;
+  margin-top: 30px;
+  line-height: 1.2;
+  
+}
+
+#imagens-cursos{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 180px;
+}
+
+#imagens-cursos img {
+  width: 200px; /* Largura padrão */
+  transition: transform 0.5s ease-in-out; /* Transição suave de 0.3 segundos */
+}
+
+#imagens-cursos img:hover {
+  transform: scale(1.5); /* Ajuste o valor conforme necessário para a escala desejada */
+}
+
+#linha-central {
+  width: 100%;
+  height: 2px; /* Espessura da linha */
+  background-color: white; /* Cor da linha */
+  position: fixed;
+  top: 63%; /* Posiciona no centro vertical da tela */
+  transform: translateY(-50%);
+  z-index: -1; /* Garante que a linha fique acima de outros elementos, se necessário */
+}
+
+#conteudo-inferior{
+  display: flex;
+  justify-content: space-between;
+}
+
+#botao-comprar-curso{
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+#comprar-curso{
+  width: 190px;
+  height: 60px;
+  font-size: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#comprar-curso:hover {
+  transform: scale(1.1); /* Ajuste o valor conforme necessário para a escala desejada */
+}
+
+#espaco-certificados{
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  margin-right: 80px;
+}
+
+#espaco-certificados p{
+  margin-right: 20px;
+}
+
+#espaco-certificados img{
+  margin-right: 10px;
+}
+
